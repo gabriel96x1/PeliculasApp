@@ -3,9 +3,10 @@ package com.rzs.peliculasapp.data.data_source
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.rzs.peliculasapp.domain.model.MovieInfo
+import com.rzs.peliculasapp.domain.model.TmdbResponse
 
 @Database(
-    entities = [MovieInfo::class],
+    entities = [MovieInfo::class, TmdbResponse::class],
     version = 1
 )
 abstract class MovieInfoDatabase : RoomDatabase() {

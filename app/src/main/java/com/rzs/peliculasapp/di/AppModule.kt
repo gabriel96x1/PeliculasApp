@@ -17,7 +17,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideNoteDatabase(app: Application): MovieInfoDatabase {
+    fun provideMovieInfoDatabase(app: Application): MovieInfoDatabase {
         return Room.databaseBuilder(
             app,
             MovieInfoDatabase::class.java,
@@ -27,7 +27,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideNoteRepository(db: MovieInfoDatabase): MovieRepository {
+    fun provideMovieRepository(db: MovieInfoDatabase): MovieRepository {
         return MoviesRepositoryImpl(db.movieInfoDao)
     }
 }

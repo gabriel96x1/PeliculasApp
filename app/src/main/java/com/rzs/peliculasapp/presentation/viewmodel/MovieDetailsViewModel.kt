@@ -3,6 +3,6 @@ package com.rzs.peliculasapp.presentation.viewmodel
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 
-@HiltViewModel
+//@HiltViewModel
 class MovieDetailsViewModel : ViewModel() {
 }
